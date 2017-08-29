@@ -1,0 +1,6 @@
+framework module Pods_IoDAdvance {
+  umbrella header "Pods-IoDAdvance-umbrella.h"
+
+  export *
+  module * { export * }
+}

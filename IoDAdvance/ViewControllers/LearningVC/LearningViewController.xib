@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LearningViewController" customModule="IoDAdvance" customModuleProvider="target">
+            <connections>
+                <outlet property="learnigTableView" destination="ZUu-4P-iES" id="nQh-iz-KME"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZUu-4P-iES">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="snK-yN-5Ti"/>
+                        <outlet property="delegate" destination="-1" id="h3b-3b-wHg"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUh-Zy-xBW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="VcR-f2-Ixw"/>
+                    </constraints>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUm-Zx-7dE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                    <color key="backgroundColor" red="0.8901960784313725" green="0.89411764705882346" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="eco-fs-B1A"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZUu-4P-iES" secondAttribute="trailing" id="27H-wE-XRQ"/>
+                <constraint firstAttribute="bottom" secondItem="ZUu-4P-iES" secondAttribute="bottom" id="6kS-q7-2B6"/>
+                <constraint firstItem="ZUu-4P-iES" firstAttribute="top" secondItem="IUm-Zx-7dE" secondAttribute="bottom" id="E0a-oX-U5a"/>
+                <constraint firstItem="IUm-Zx-7dE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Eyl-VG-X7t"/>
+                <constraint firstItem="FUh-Zy-xBW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L6w-Oo-jMS"/>
+                <constraint firstItem="IUm-Zx-7dE" firstAttribute="top" secondItem="FUh-Zy-xBW" secondAttribute="bottom" id="S9c-nK-kOs"/>
+                <constraint firstItem="ZUu-4P-iES" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gMT-Pw-PIr"/>
+                <constraint firstAttribute="trailing" secondItem="IUm-Zx-7dE" secondAttribute="trailing" id="ij2-eL-PCe"/>
+                <constraint firstAttribute="trailing" secondItem="FUh-Zy-xBW" secondAttribute="trailing" id="ou4-AS-5Ze"/>
+                <constraint firstItem="FUh-Zy-xBW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x7j-UG-zfj"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
